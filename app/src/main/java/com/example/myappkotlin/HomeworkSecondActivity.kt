@@ -8,10 +8,8 @@ class HomeworkSecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_homework_second)
-
-        val textFromMainActivity=intent.getStringExtra("GREETINGS")
+        val textFromMainActivity = intent.getStringExtra("GREETINGS")
         val textView = findViewById<TextView>(R.id.textViewHomework)
-        textView.text=textFromMainActivity
-
+        textView.text = textFromMainActivity
     }
 }
